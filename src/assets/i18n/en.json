@@ -1,0 +1,11 @@
+{
+    "languages" : {
+        "english": "English",
+        "portuguese": "Portuguese"
+    },
+    "content": {
+        "title": "Page title",
+        "todayDate": "Today date is",
+        "myMoney": "My money"
+    }
+}

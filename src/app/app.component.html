@@ -1,0 +1,21 @@
+<h3>{{ currentLang }}</h3>
+
+<select [formControl]="selectControl">
+  <ng-container *ngFor="let item of locales">
+    <option [value]="item.lang" l10nTranslate>{{ item.key }}</option>
+  </ng-container>
+</select>
+
+<h1 l10nTranslate>content.title</h1>
+
+<div>
+  <span l10nTranslate>content.todayDate</span>
+  <span>&nbsp;</span>
+  <span>{{ today | l10nDate:defaultLocale:'fullDate' }}</span>
+</div>
+
+<div>
+  <span l10nTranslate>content.myMoney</span>
+  <span>&nbsp;</span>
+  <span>{{ 1000000.50 | l10nCurrency:defaultLocale:currency }} </span>
+</div>
